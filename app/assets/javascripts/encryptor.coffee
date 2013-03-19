@@ -1,10 +1,9 @@
-updateEncryptedText = ->
+encrypt = ->
   plainText = $("#plain-text").val()
-  encryptedText = encrypt(plainText)
-  $("#encrypted-text").val encryptedText
+  $.get "/encrypt", {text: plainText}, update
 
-encrypt = (text) ->
-  text
+update = (data) ->
+  $("#encrypted-text").val data.text
 
 $(document).ready ->
-  $("#plain-text").keyup updateEncryptedText
+  $("#plain-text").keyup encrypt
