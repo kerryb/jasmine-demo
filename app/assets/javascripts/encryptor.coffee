@@ -1,4 +1,4 @@
-addOne = ->
+window.addOne = ->
   "todo"
 
 encrypt = ->
