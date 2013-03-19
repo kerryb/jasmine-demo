@@ -1,0 +1,10 @@
+src_files:
+  - ["application.js"]
+helpers:
+  - helpers/**/*
+spec_files:
+  - "**/*[Ss]pec.*"
+src_dir:
+- app/assets/javascripts
+- vendor/assets/javascripts
+spec_dir: spec/javascripts
