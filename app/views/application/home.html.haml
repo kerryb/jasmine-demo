@@ -1,5 +1,9 @@
-%form
-  %label{for: "plain-text"} Plain text
-  %input#plain-text.input-xlarge{type: "text", placeholder: "Type some text"}
-  %label{for: "enrypted-text"} Encrypted text
-  %input#encrypted-text.input-xlarge{type: "text", disabled: true}
+%form.well.form-horizontal
+  .control-group
+    %label.control-label{for: "plain-text"} Plain text
+    .controls
+      %input#plain-text.input-xlarge{type: "text", placeholder: "Type some text"}
+  .control-group
+    %label.control-label{for: "enrypted-text"} Encrypted text
+    .controls
+      %input#encrypted-text.input-xlarge{type: "text", disabled: true}
