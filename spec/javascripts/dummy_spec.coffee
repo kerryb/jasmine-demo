@@ -4,4 +4,4 @@ describe "2 + 2", ->
 
 describe "addOne", ->
   it "adds one to a number", ->
-    expect(window.addOne(42)).toEqual 43
+    expect(window.Encryptor.addOne(42)).toEqual 43

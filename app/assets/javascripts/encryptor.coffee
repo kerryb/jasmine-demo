@@ -1,5 +1,6 @@
-window.addOne = (number) ->
-  number + 1
+window.Encryptor = class Encryptor
+  @addOne: (number) ->
+    number + 1
 
 encrypt = ->
   plainText = $("#plain-text").val()
