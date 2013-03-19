@@ -1,5 +1,5 @@
-window.addOne = ->
-  "todo"
+window.addOne = (number) ->
+  number + 1
 
 encrypt = ->
   plainText = $("#plain-text").val()
