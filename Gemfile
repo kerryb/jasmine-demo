@@ -11,3 +11,7 @@ group :assets do
   gem "twitter-bootstrap-rails"
   gem "uglifier"
 end
+
+group :development, :test do
+  gem "jasmine-headless-webkit"
+end
