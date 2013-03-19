@@ -5,5 +5,5 @@ encrypt = ->
 update = (data) ->
   $("#encrypted-text").val data.text
 
-$(document).ready ->
+$ ->
   $("#plain-text").keyup encrypt
