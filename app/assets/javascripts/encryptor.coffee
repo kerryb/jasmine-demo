@@ -1,3 +1,6 @@
+addOne = ->
+  "todo"
+
 encrypt = ->
   plainText = $("#plain-text").val()
   $.get "/encrypt", {text: plainText}, update
