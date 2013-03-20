@@ -14,4 +14,5 @@ end
 
 group :development, :test do
   gem "jasmine-headless-webkit"
+  gem "jasmine-spec-extras"
 end
