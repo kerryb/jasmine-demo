@@ -1,10 +1,13 @@
-window.Encryptor = class Encryptor
-  @encrypt: =>
+class Encryptor
+  constructor: ->
+    $("#plain-text").keyup @encrypt
+
+  encrypt: =>
     plainText = $("#plain-text").val()
     $.get "/encrypt", {text: plainText}, @update
 
-  @update: (data) =>
+  update: (data) =>
     $("#encrypted-text").val data.text
 
 $ ->
-  $("#plain-text").keyup window.Encryptor.encrypt
+  window.encryptor = new Encryptor
