@@ -1,5 +1,6 @@
 class Encryptor
   constructor: ->
+    $("#plain-text").focus()
     $("#plain-text").keyup @encrypt
 
   encrypt: =>
