@@ -1,16 +1,13 @@
 source "https://rubygems.org"
 
+gem "coffee-rails"
+gem "haml"
+gem "jquery-rails"
 gem "rails"
-
-group :assets do
-  gem "sass-rails"
-  gem "coffee-rails"
-  gem "haml"
-  gem "jquery-rails"
-  gem "therubyracer"
-  gem "twitter-bootstrap-rails"
-  gem "uglifier"
-end
+gem "sass-rails"
+gem "therubyracer"
+gem "twitter-bootstrap-rails"
+gem "uglifier"
 
 group :development, :test do
   gem "jasmine-headless-webkit"
